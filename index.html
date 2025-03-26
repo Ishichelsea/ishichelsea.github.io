@@ -6,6 +6,7 @@
   <title>Ishitha Raja | Software Developer</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 </head>
 <body>
   <div class="container">
@@ -24,12 +25,12 @@
     </aside>
 
     <main class="main-content">
-      <section id="about">
+      <section id="about" data-aos="fade-up">
         <h2>About Me</h2>
         <p>Software Engineer with 3+ years of experience specializing in Java, Spring Boot, and AWS. Passionate about building resilient backend systems, cloud-native applications, and automation pipelines.</p>
       </section>
 
-      <section id="skills">
+      <section id="skills" data-aos="fade-up" data-aos-delay="100">
         <h2>Skills</h2>
         <ul>
           <li>Java, Spring Boot, Microservices</li>
@@ -41,7 +42,7 @@
         </ul>
       </section>
 
-      <section id="projects">
+      <section id="projects" data-aos="fade-up" data-aos-delay="200">
         <h2>Projects</h2>
         <ul>
           <li><strong>Banking Transaction Automation:</strong> Reduced processing time by 40% using Java & Spring Boot.</li>
@@ -74,5 +75,9 @@
       </section>
     </main>
   </div>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>
