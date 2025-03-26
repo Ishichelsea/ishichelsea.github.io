@@ -82,11 +82,25 @@ body, html {
 
 h2 {
   color: #1e1f26;
+  font-size: 1.8rem;
   margin-bottom: 1rem;
+  position: relative;
+  display: inline-block;
+}
+
+h2::after {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 3px;
+  background-color: #4db8ff;
+  margin-top: 6px;
+  border-radius: 2px;
 }
 
 ul {
   padding-left: 1.5rem;
+  line-height: 1.7;
 }
 
 .background-blob {
@@ -100,6 +114,32 @@ ul {
   z-index: -1;
   animation: blobMove 8s infinite ease-in-out;
   opacity: 0.2;
+}
+
+.card-box {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  margin-bottom: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-box:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+.card-box h3 {
+  margin-top: 0;
+  color: #333;
+  margin-bottom: 0.3rem;
+}
+
+.card-box p {
+  margin: 0;
+  color: #555;
+  line-height: 1.5;
 }
 
 @keyframes fadeIn {
